@@ -50,7 +50,7 @@ The one special thing you need to do is to add a new filter to your scene (or to
 ## Main Streaming Application Configuration 
 
 ### OBS Studio
-  1. Install or update OBS Studio (Or, if you're using a portable version for your main OBS, follow the portable OBS install above using a different destination folder.  Then skip the rest of this section)
+  1. Install or update OBS Studio (Or, if you're using a portable version for your main OBS, follow the portable OBS install above using a different destination folder.  Then skip to step 4)
   2. Download the OBS-NDI windows installer from here [here](https://github.com/Palakis/obs-ndi/releases)
   3. Run the installer to install the OBS-NDI plugin on your main OBS instance.
   4. Launch OBS Studio
