@@ -46,9 +46,9 @@ The one special thing you need to do is to add a new filter to your scene (or to
     c. Make sure to set up your video settings (e.g. resolution and framerate).  Keep in mind you can record in any aspect ratio (e.g. 4:3 960x720)
  
  
- ## Main Streaming Application Configuration 
- 
- ### OBS Studio
+## Main Streaming Application Configuration 
+
+### OBS Studio
   1. Install or update OBS Studio (Or, if you're using a portable version for your main OBS, follow the portable OBS install above using a different destination folder.  Then skip the rest of this section)
   2. Download the OBS-NDI windows installer from here [here](https://github.com/Palakis/obs-ndi/releases)
   3. Run the installer to install the OBS-NDI plugin on your main OBS instance.
@@ -57,5 +57,5 @@ The one special thing you need to do is to add a new filter to your scene (or to
   6. Add a new NDI™ Source 
   7. Choose the name you used in the previous section.  It will have your computer's hostname in front of it.
  
- ### Other
-   ¯\\_(ツ)_/¯
+### Other
+   ``¯\_(ツ)_/¯``
