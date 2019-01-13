@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
+# OBS Setup to Replace AmarecTV
 
-You can use the [editor on GitHub](https://github.com/btrim/dual-obs-setup/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Summary
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is for users who are using Amarec primarily for recording gameplay in its own separate video, while simultaneously streaming with webcam, layout, timer, etc.
 
-### Markdown
+If you're using Amarec solely for its deinterlacing features (e.g. when using gv-usb2, dazzle, or ezcap) and don't care about your recording having more content than just gameplay, this isn't necessarily for you.  However, you should be able to use OBS Studio to deinterlace without any issues, as far as I know.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Requirements
+ - [OBS Studio Portable](https://https://obsproject.com/download) 
+   - Choose "Download Zip" or click for version [22.0.2](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-22.0.2-Full-x64.zip)
+ - Your favorite streaming program that supports NDI.  I'm using [OBS Studio](https://obsproject.com/download).  This can be the install you have already.
+ - [OBS NDI Plugin](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/updates)
+ - A Video capture source that works in OBS. (This is usually a capture card but could also be window, monitor, game capture, etc).
+ 
+## Portable OBS Install
 
-```markdown
-Syntax highlighted code block
+ 1. Extract the OBS-Studio-x.y.z-Full-x64.zip that you downloaded into a folder on your system.  For my examples, I'll be using G:\obs-recording
+ 2. Browse to bin\64bit in Explorer.
+ 3. Find obs64.exe in Explorer
+ 4. Right-click obs64.exe and select "Create Shortcut"
+ 5. (Optional) Rename the shortcut to "obs-recording"
+ 6. Right-click "obs-recording" shortcut and select properties.
+ 7. In the "Target" field, add ``--portable`` such that it contains ``G:\obs_recording\bin\64bit\obs64.exe --portable``
+ 
+When you launch OBS via this shortcut, the scenes and settings will now be stored within the G:\obs_recording folder.
 
-# Header 1
-## Header 2
-### Header 3
+### Install OBS-NDI Plugin into OBS portable
 
-- Bulleted
-- List
+  1. Download the NDI Runtime and Windows ZIP version of the OBS-NDI plugin from [here](https://github.com/Palakis/obs-ndi/releases)
+  2. Extract the ZIP into your portable OBS folder, e.g. ``G:\obs-recording``.
+  3. Install the NDI™ 3.5+ Runtime.  Instructions indicate a reboot will be required.
+  
+## Portable OBS Configuration
 
-1. Numbered
-2. List
+I'll leave most of the configuration to you, but remember this is what will be used to record your gameplay video and audio.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/btrim/dual-obs-setup/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The one special thing you need to do is to add a new filter to your scene (or to your video capture source)
+  1. Add your video capture device source to OBS and configure it as required.  Make sure to send audio to out to stream.
+  2. On either the scene or the video capture source, right-click and add a filter.
+  3. Under "Effect Filters", add "Dedicated NDI™ Output"
+    a. In the NDI Name field, choose something meaningful.  Mine is named "Video feed"
+ 
+ 
+ ## Main Streaming Application Configuration 
+ 
+ ### OBS Studio
+  1. Install or update OBS Studio (Or, if you're using a portable version for your main OBS, follow the portable OBS install above using a different destination folder.  Then skip the rest of this section)
+  2. Download the OBS-NDI windows installer from here [here](https://github.com/Palakis/obs-ndi/releases)
+  3. Run the installer to install the OBS-NDI plugin on your main OBS instance.
+  4. Launch OBS Studio
+  5. Disable your old source, if applicable
+  6. Add a new NDI™ Source 
+  7. Choose the name you used in the previous section.  It will have your computer's hostname in front of it.
+ 
+ ### Other
+   ¯\_(ツ)_/¯
