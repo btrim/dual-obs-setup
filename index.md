@@ -40,11 +40,11 @@ The one special thing you need to do is to add a new filter to your scene (or to
   1. Add your video capture device source to OBS and configure it as required.  Make sure to send audio to out to stream.
   2. On either the scene or the video capture source, right-click and add a filter.
   3. Under "Effect Filters", add "Dedicated NDI™ Output"
-    a. In the NDI Name field, choose something meaningful.  Mine is named "Video feed"
+     * In the NDI Name field, choose something meaningful.  Mine is named "Video feed"
   4. Configure recording as needed.   There is no need to setup streaming
-    a. Due to potential issues with CPU usage, using nvenc, qsync, or vce might be necessary.  Use a high bitrate.
-    b. Lots of people use amarec with lagarith.  high quality or lossless h264 is the easiest replacement
-    c. Make sure to set up your video settings (e.g. resolution and framerate).  Keep in mind you can record in any aspect ratio (e.g. 4:3 960x720)
+     * Due to potential issues with CPU usage, using nvenc, qsync, or vce might be necessary.  Use a high bitrate.
+     * Lots of people use amarec with lagarith.  high quality or lossless h264 is the easiest replacement
+     * Make sure to set up your video settings (e.g. resolution and framerate).  Keep in mind you can record in any aspect ratio (e.g. 4:3 960x720)
  
  
 ## Main Streaming Application Configuration 
