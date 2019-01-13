@@ -22,6 +22,7 @@ If you're using Amarec solely for its deinterlacing features (e.g. when using gv
  5. (Optional) Rename the shortcut to "obs-recording"
  6. Right-click "obs-recording" shortcut and select properties.
  7. In the "Target" field, add ``--portable`` such that it contains ``G:\obs_recording\bin\64bit\obs64.exe --portable``
+   ![Shortcut Properties Screenshot](/obs-recording-shortcut-properties.png)
  
 When you launch OBS via this shortcut, the scenes and settings will now be stored within the G:\obs_recording folder.
 
