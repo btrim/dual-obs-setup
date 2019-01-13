@@ -15,9 +15,9 @@ If you're using Amarec solely for its deinterlacing features (e.g. when using gv
  
 ## Portable OBS Install
 
- 1. Extract the OBS-Studio-x.y.z-Full-x64.zip that you downloaded into a folder on your system.  For my examples, I'll be using G:\obs-recording
- 2. Browse to bin\64bit in Explorer.
- 3. Find obs64.exe in Explorer
+ 1. Extract the OBS-Studio-x.y.z-Full-x64.zip that you downloaded into a folder on your system.  For my examples, I'll be using ``G:\obs-recording``
+ 2. Browse to ``g:\obs-recording\bin\64bit`` in Explorer.
+ 3. Find obs64.exe in this folder in Explorer
  4. Right-click obs64.exe and select "Create Shortcut"
  5. (Optional) Rename the shortcut to "obs-recording"
  6. Right-click "obs-recording" shortcut and select properties.
