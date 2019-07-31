@@ -7,7 +7,7 @@ This is for users who are using Amarec primarily for recording gameplay in its o
 If you're using Amarec solely for its deinterlacing features (e.g. when using gv-usb2, dazzle, or ezcap) and don't care about your recording having more content than just gameplay, this isn't necessarily for you.  However, you should be able to use OBS Studio to deinterlace without any issues, as far as I know.
 
 ## Requirements
- - [OBS Studio Portable](https://https://obsproject.com/download) 
+ - [OBS Studio Portable](https://obsproject.com/download) 
    - Choose "Download Zip"
  - Your favorite streaming program that supports NDI.  I'm using [OBS Studio](https://obsproject.com/download).  This can be the install you have already.
  - [OBS NDI Plugin](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/updates)
