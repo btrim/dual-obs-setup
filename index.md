@@ -8,7 +8,7 @@ If you're using Amarec solely for its deinterlacing features (e.g. when using gv
 
 ## Requirements
  - [OBS Studio Portable](https://https://obsproject.com/download) 
-   - Choose "Download Zip" or click for version [22.0.2](https://cdn-fastly.obsproject.com/downloads/OBS-Studio-22.0.2-Full-x64.zip)
+   - Choose "Download Zip"
  - Your favorite streaming program that supports NDI.  I'm using [OBS Studio](https://obsproject.com/download).  This can be the install you have already.
  - [OBS NDI Plugin](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/updates)
  - A Video capture source that works in OBS. (This is usually a capture card but could also be window, monitor, game capture, etc).
